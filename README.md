@@ -1,20 +1,15 @@
-# discord-emojis-api
+# Discord Emojis API
 
-## Build Setup
+A Discord Emojis API for mainland China users.
 
-```bash
-# install dependencies
-$ yarn install
+It could be used by auto programs, eg. QQ bot
 
-# serve with hot reload at localhost:3000
-$ yarn dev
+## Usage
 
-# build for production and launch server
-$ yarn build
-$ yarn start
-
-# generate static project
-$ yarn generate
+```http
+GET /api/get
 ```
 
-For detailed explanation on how things work, check out [Nuxt.js docs](https://nuxtjs.org).
+Params:
+
+- **id** `{Number}` Emoji ID
