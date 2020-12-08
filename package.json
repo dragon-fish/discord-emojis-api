@@ -11,7 +11,7 @@
   "dependencies": {
     "core-js": "^3.6.5",
     "node-base64-image": "^2.0.1",
-    "nuxt": "^2.14.5"
+    "nuxt": "^2.14.10"
   },
   "devDependencies": {
     "@nuxtjs/vuetify": "^1.11.2",
