@@ -16,8 +16,8 @@ Your usage will consume the author's traffic. You can deploy an API yourself (fo
 
 ### 项目设置 Settings
 
-- FRAMEWORK PRESET: Other
-- INSTALL COMMAND, BUILD COMMAND: <blank>
+- FRAMEWORK PRESET: `Other`
+- INSTALL COMMAND, BUILD COMMAND: ` ` (留空/blank)
 
 ## 使用方法 Usage
 
