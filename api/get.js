@@ -10,6 +10,7 @@ module.exports = async (req, res) => {
   }
   getImg('https://cdn.discordapp.com/emojis/' + id + '.png').then(
     (img) => {
+      res.setHeader('Content-Type', 'image/png')
       res.status(200).send(img)
     },
     (err) => {
