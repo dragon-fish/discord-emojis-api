@@ -1,0 +1,20 @@
+{
+  "name": "discord-emojis-api",
+  "version": "1.0.0",
+  "main": "api/index.js",
+  "repository": "https://github.com/Dragon-Fish/discord-emojis-api.git",
+  "author": "Dragon-Fish <824399619@qq.com>",
+  "license": "MIT",
+  "dependencies": {
+    "node-base64-image": "^2.0.1"
+  },
+  "devDependencies": {
+    "prettier": "^2.2.1",
+    "vercel": "^21.0.1"
+  },
+  "scripts": {
+    "start": "npm run dev",
+    "dev": "vercel dev",
+    "prettier": "prettier --write api/**/*.js"
+  }
+}
