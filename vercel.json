@@ -1,0 +1,8 @@
+{
+  "redirects": [
+    {
+      "source": "/emojis/(.+)",
+      "destination": "/api/emojis/$1"
+    }
+  ]
+}

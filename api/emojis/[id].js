@@ -1,4 +1,4 @@
-const getImg = require('node-base64-image').encode
+const axios = require('axios')
 
 module.exports = async (req, res) => {
   const { id } = req.query
@@ -8,12 +8,12 @@ module.exports = async (req, res) => {
     })
     return
   }
-  getImg('https://cdn.discordapp.com/emojis/' + id + '.png').then(
-    img => {
+  axios.get('https://cdn.discordapp.com/emojis/' + id + '.png').then(
+    ({ data }) => {
       res.setHeader('Content-Type', 'image/png')
-      res.status(200).send(img)
+      res.status(200).send(data)
     },
-    err => {
+    (err) => {
       res.status(503).send(err)
     }
   )

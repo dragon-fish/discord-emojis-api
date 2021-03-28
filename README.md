@@ -24,7 +24,7 @@ Your usage will consume the author's traffic. You can deploy an API yourself (fo
 ### 获取表情包 Get Emoji
 
 ```http
-GET /api/emojis/:id
+GET /emojis/:id
 ```
 
 Params:
@@ -40,6 +40,6 @@ Content-Type: application/json # Not found
 
 ## 示例 Example
 
-![Emoji 694547549087858729](https://discord-emoji.vercel.app/api/emojis/694547549087858729)
+![Emoji 694547549087858729](https://discord-emoji.vercel.app/emojis/694547549087858729)
 
-https://discord-emoji.vercel.app/api/emojis/694547549087858729
+<https://discord-emoji.vercel.app/emojis/694547549087858729>
