@@ -8,13 +8,17 @@ module.exports = async (req, res) => {
     })
     return
   }
-  axios.get('https://cdn.discordapp.com/emojis/' + id + '.png').then(
-    ({ data }) => {
-      res.setHeader('Content-Type', 'image/png')
-      res.status(200).send(data.toString('base64'))
-    },
-    (err) => {
-      res.status(503).send(err)
-    }
-  )
+  axios
+    .get('https://cdn.discordapp.com/emojis/' + id + '.png', {
+      responseType: 'arraybuffer',
+    })
+    .then(
+      ({ data }) => {
+        res.setHeader('Content-Type', 'image/png')
+        res.status(200).send(Buffer.from(data, 'base64'))
+      },
+      (err) => {
+        res.status(503).send(err)
+      }
+    )
 }
