@@ -11,7 +11,7 @@ module.exports = async (req, res) => {
   axios.get('https://cdn.discordapp.com/emojis/' + id + '.png').then(
     ({ data }) => {
       res.setHeader('Content-Type', 'image/png')
-      res.status(200).send(data)
+      res.status(200).send(data.toString('base64'))
     },
     (err) => {
       res.status(503).send(err)
